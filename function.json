@@ -1,0 +1,13 @@
+{
+  "bindings": [
+    {
+      "type": "kafkaTrigger",
+      "name": "kafkaEvent",
+      "direction": "in",
+      "brokerList": "kafka:9092",
+      "topic": "tweet-events",
+      "consumerGroup": "moderation-service-group"
+    }
+  ],
+  "scriptFile": "moderateFunction.js"
+}
